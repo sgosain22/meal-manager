@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Step 3 </legend>
+            <div class="mc_lunch" id="mc_lunch">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <select class="form-control form-control-lg" id="mc_lunch_select" onclick="mymc()">
+                            <!-- <option value="none">Select Meal</option>
+                            <option value="Chicken Burger">Chicken Burger</option>
+                            <option value="Ham Burger">Ham Burger</option>
+                            <option value="Cheese Burger">Cheese Burger</option>
+                            <option value="Fries">Fries</option> -->
+
+                        </select>
+                        <h6 class="vali_lunch" id="mc_lunch_h">This field is required</h6>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="input_div">
+                            <input type="button" value="-" id="minus_mc_lunch" onclick="minusdown()">
+                            <input type="text" size="50" value="1" id="countdown" class="count">
+                            <input type="button" value="+" id="plus_vege" onclick="plusdown()">
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Chicken -->
+
+                <div class="mc_lunch_chick" id="mc_lunch_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_select" onclick="mychicken()">
+                                <!-- <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                                <option value="Fries">Fries</option> -->
+
+                            </select>
+                            <h6 class="vali_lunch" id="chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_one()">
+                                <input type="text" size="50" value="1" id="count_one" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_one()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /////3rd stage -->
+
+                <!-- Chicken- ham -->
+
+
+                <div class="mc_lunch_chick_ham" id="mc_lunch_chick_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_ham_select" onclick="mychickham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_two()">
+                                <input type="text" size="50" value="1" id="count_two" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_two()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- chick-cheese -->
+
+                <div class="mc_lunch_chick_cheese" id="mc_lunch_chick_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_cheese_select"
+                                onclick="mychickcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_three()">
+                                <input type="text" size="50" value="1" id="count_three" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_three()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chicken-fries -->
+                <div class="mc_lunch_chick_fries" id="mc_lunch_chick_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_fries_select"
+                                onclick="mychickfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_four()">
+                                <input type="text" size="50" value="1" id="count_four" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_four()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- chicken han fries -->
+                <div class="mc_lunch_chick_ham_fries" id="mc_lunch_chick_ham_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_ham_fries_select"
+                                onclick="mychickhamfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="chick_ham_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_five()">
+                                <input type="text" size="50" value="1" id="count_five" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_five()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- chicken han cheese -->
+                <div class="mc_lunch_chick_ham_cheese" id="mc_lunch_chick_ham_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_ham_cheese_select"
+                                onclick="mychickhamcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_ham_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_six()">
+                                <input type="text" size="50" value="1" id="count_six" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_six()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- chick-cheese ham_ham -->
+
+                <div class="mc_lunch_chick_cheese_ham" id="mc_lunch_chick_cheese_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_cheese_ham_select"
+                                onclick="mychickcheeseham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_cheese_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_seven()">
+                                <input type="text" size="50" value="1" id="count_seven" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_seven()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chick-cheese fries  -->
+
+                <div class="mc_lunch_chick_cheese_fries" id="mc_lunch_chick_cheese_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_cheese_fries_select"
+                                onclick="mychickcheesefries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_cheese_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_eight()">
+                                <input type="text" size="50" value="1" id="count_eight" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_eight()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Chicken-fries ham -->
+                <div class="mc_lunch_chick_fries_ham" id="mc_lunch_chick_fries_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_fries_ham_select"
+                                onclick="mychickfriesham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_fries_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_nine()">
+                                <input type="text" size="50" value="1" id="count_nine" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_nine()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chicken-fries cheese -->
+                <div class="mc_lunch_chick_fries_cheese" id="mc_lunch_chick_fries_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="chick_fries_cheese_select"
+                                onclick="mychickfriescheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="chick_fries_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ten()">
+                                <input type="text" size="50" value="1" id="count_ten" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ten()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ////////////////////////////// -->
+                <!-- Ham Burgrer -->
+
+                <div class="mc_lunch_ham" id="mc_lunch_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_select" onclick="myham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                                <option value="Fries">Fries</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham()">
+                                <input type="text" size="50" value="1" id="count_ham" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- ham burger -->
+
+
+                <div class="mc_lunch_ham_chick" id="mc_lunch_ham_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_chick_select" onclick="myhamchick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_one()">
+                                <input type="text" size="50" value="1" id="count_ham_one" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_one()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ham-cheese -->
+
+                <div class="mc_lunch_ham_cheese" id="mc_lunch_ham_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_cheese_select" onclick="myhamcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_two()">
+                                <input type="text" size="50" value="1" id="count_ham_two" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_two()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ham-fries -->
+                <div class="mc_lunch_ham_fries" id="mc_lunch_ham_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_fries_select" onclick="myhamfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_three()">
+                                <input type="text" size="50" value="1" id="count_ham_three" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_three()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ham chick fries -->
+
+
+                <div class="mc_lunch_ham_chick_fries" id="mc_lunch_ham_chick_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_chick_fries_select"
+                                onclick="myhamchickfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="ham_chick_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_four()">
+                                <input type="text" size="50" value="1" id="count_ham_four" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_four()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ham chicken cheese -->
+
+
+                <div class="mc_lunch_ham_chick_cheese" id="mc_lunch_ham_chick_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_chick_cheese_select"
+                                onclick="myhamchickcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_chick_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_five()">
+                                <input type="text" size="50" value="1" id="count_ham_five" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_five()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ham-cheese chicken -->
+
+                <div class="mc_lunch_ham_cheese_chick" id="mc_lunch_ham_cheese_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_cheese_chick_select"
+                                onclick="myhamcheesechick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_cheese_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_six()">
+                                <input type="text" size="50" value="1" id="count_ham_six" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_six()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ham-cheese cheese -->
+
+                <div class="mc_lunch_ham_cheese_fries" id="mc_lunch_ham_cheese_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_cheese_fries_select"
+                                onclick="myhamcheesefries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_cheese_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_seven()">
+                                <input type="text" size="50" value="1" id="count_ham_seven" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_seven()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ham-fries chick -->
+                <div class="mc_lunch_ham_fries_chick" id="mc_lunch_ham_fries_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_fries_chick_select"
+                                onclick="myhamfrieschick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_fries_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_eight()">
+                                <input type="text" size="50" value="1" id="count_ham_eight" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_eight()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ham-fries cheese -->
+                <div class="mc_lunch_ham_fries_cheese" id="mc_lunch_ham_fries_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="ham_fries_cheese_select"
+                                onclick="myhamfriescheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="ham_fries_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_ham_nine()">
+                                <input type="text" size="50" value="1" id="count_ham_nine" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_ham_nine()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- //////////////////////////// -->
+                <!-- Cheese burger -->
+
+                <div class="mc_lunch_cheese" id="mc_lunch_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_select" onclick="mycheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Fries">Fries</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese()">
+                                <input type="text" size="50" value="1" id="count_cheese" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cheese chicken -->
+
+
+                <div class="mc_lunch_cheese_chick" id="mc_lunch_cheese_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_chick_select"
+                                onclick="mycheesechick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_one()">
+                                <input type="text" size="50" value="1" id="count_cheese_one" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_one()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cheese-ham -->
+
+                <div class="mc_lunch_cheese_ham" id="mc_lunch_cheese_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_ham_select" onclick="mycheeseham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_two()">
+                                <input type="text" size="50" value="1" id="count_cheese_two" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_two()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Cheese-fries -->
+                <div class="mc_lunch_cheese_fries" id="mc_lunch_cheese_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_fries_select"
+                                onclick="mycheesefries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_three()">
+                                <input type="text" size="50" value="1" id="count_cheese_three" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_three()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cheese chicken ham -->
+
+
+                <div class="mc_lunch_cheese_chick_ham" id="mc_lunch_cheese_chick_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_chick_ham_select"
+                                onclick="mycheesechickham()">
+                                <option value="none">Select Meal</option>
+
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_chick_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_four()">
+                                <input type="text" size="50" value="1" id="count_cheese_four" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_four()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cheese chicken fries -->
+
+
+                <div class="mc_lunch_cheese_chick_fries" id="mc_lunch_cheese_chick_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_chick_fries_select"
+                                onclick="mycheesechickfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_chick_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_five()">
+                                <input type="text" size="50" value="1" id="count_cheese_five" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_five()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- cheese-ham  chicken-->
+
+                <div class="mc_lunch_cheese_ham_chick" id="mc_lunch_cheese_ham_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_ham_chick_select"
+                                onclick="mycheesehamchick()">
+                                <option value="none">Select Meal</option>
+
+                                <option value="Fries">Fries</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_ham_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_six()">
+                                <input type="text" size="50" value="1" id="count_cheese_six" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_six()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- cheese-ham fries -->
+
+                <div class="mc_lunch_cheese_ham_fries" id="mc_lunch_cheese_ham_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_ham_fries_select"
+                                onclick="mycheesehamfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_ham_fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_seven()">
+                                <input type="text" size="50" value="1" id="count_cheese_seven" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_seven()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Cheese-fries chick -->
+                <div class="mc_lunch_cheese_fries_chick" id="mc_lunch_cheese_fries_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_fries_chick_select"
+                                onclick="mycheesefrieschick()">
+                                <option value="none">Select Meal</option>
+
+                                <option value="Ham Burger">Ham Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_fries_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_eight()">
+                                <input type="text" size="50" value="1" id="count_cheese_eight" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_eight()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Cheese-fries  ham-->
+                <div class="mc_lunch_cheese_fries_ham" id="mc_lunch_cheese_fries_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="cheese_fries_ham_select"
+                                onclick="mycheesefriesham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="cheese_fries_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_cheese_nine()">
+                                <input type="text" size="50" value="1" id="count_cheese_nine" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_cheese_nine()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ///////////////////////////////// -->
+                <!-- fries  -->
+
+                <div class="mc_lunch_fries" id="mc_lunch_fries">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_select" onclick="myfries()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries()">
+                                <input type="text" size="50" value="1" id="count_fries" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     <!-- fries chicken -->
+
+
+                <div class="mc_lunch_fries_chick" id="mc_lunch_fries_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_chick_select"
+                                onclick="myfrieschick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_one()">
+                                <input type="text" size="50" value="1" id="count_fries_one" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_one()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fries-ham -->
+
+                <div class="mc_lunch_fries_ham" id="mc_lunch_fries_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_ham_select" onclick="myfriesham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_two()">
+                                <input type="text" size="50" value="1" id="count_fries_two" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_two()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fries_Cheese -->
+                <div class="mc_lunch_fries_cheese" id="mc_lunch_fries_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_cheese_select"
+                                onclick="myfriescheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_three()">
+                                <input type="text" size="50" value="1" id="count_fries_three" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_three()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- fries chicken ham -->
+
+
+                <div class="mc_lunch_fries_chick_ham" id="mc_lunch_fries_chick_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_chick_ham_select"
+                                onclick="myfrieschickham()">
+                                <option value="none">Select Meal</option>
+
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_chick_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_four()">
+                                <input type="text" size="50" value="1" id="count_fries_four" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_four()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fries chicken cheese -->
+
+
+                <div class="mc_lunch_fries_chick_cheese" id="mc_lunch_fries_chick_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_chick_cheese_select"
+                                onclick="myfrieschickcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="fries_chick_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_five()">
+                                <input type="text" size="50" value="1" id="count_fries_five" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_five()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fries-ham chick -->
+
+                <div class="mc_lunch_fries_ham_chick" id="mc_lunch_fries_ham_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_ham_chick_select"
+                                onclick="myfrieshamchick()">
+                                <option value="none">Select Meal</option>
+
+                                <option value="Cheese Burger">Cheese Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_ham_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_six()">
+                                <input type="text" size="50" value="1" id="count_fries_six" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_six()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fries-ham chesse -->
+
+                <div class="mc_lunch_fries_ham_cheese" id="mc_lunch_fries_ham_cheese">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_ham_cheese_select"
+                                onclick="myfrieshamcheese()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+
+                            </select>
+                            <h6 class="vali_lunch" id="fries_ham_cheese">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_seven()">
+                                <input type="text" size="50" value="1" id="count_fries_seven" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_seven()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- fries_Cheese chicken -->
+                <div class="mc_lunch_fries_cheese_chick" id="mc_lunch_fries_cheese_chick">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_cheese_chick_select"
+                                onclick="myfriescheesechick()">
+                                <option value="none">Select Meal</option>
+                                <option value="Ham Burger">Ham Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_cheese_chick">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_eight()">
+                                <input type="text" size="50" value="1" id="count_fries_eight" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_eight()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fries_Cheese ham -->
+                <div class="mc_lunch_fries_cheese_ham" id="mc_lunch_fries_cheese_ham">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <select class="form-control form-control-lg" id="fries_cheese_ham_select"
+                                onclick="myfriescheeseham()">
+                                <option value="none">Select Meal</option>
+                                <option value="Chicken Burger">Chicken Burger</option>
+                            </select>
+                            <h6 class="vali_lunch" id="fries_cheese_ham">This field is required</h6>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div id="input_div">
+                                <input type="button" value="-" id="minus" onclick="minus_fries_nine()">
+                                <input type="text" size="50" value="1" id="count_fries_nine" class="count">
+                                <input type="button" value="+" id="plus" onclick="plus_fries_nine()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+              
+
+
+
+                <br>
+                <button class="btn btn-primary addbtnmclunchwala" id="addbtnmclunch" onclick="addbtnmclunch()">Add more
+                    Dish </button>
+
+
+
+                <br>
+                <button class="btn btn-primary " onclick="mcLunch_back()"> Back</button>
+                <button class="btn btn-primary " onclick="mclunchvali()"> Submit</button>
+
+
+            </div>
+
+
+
+
+        </fieldset>
+    </div>
+
+
+<script src="mclunch.js"></script>
+<script src="plus.js"></script>
+
+
+
+</body>
+
+</html>

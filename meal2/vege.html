@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <fieldset>
+            <legend>Step 3   </legend>
+             <!-- Vege Deli Breakfast -->
+
+        <div class="vege_break" id="vege_break">
+            <div class="row">
+                <div class="col-sm-9">
+                    <select class="form-control form-control-lg" id="vege_break_select" onclick="myvege()">
+                        <option value="none">Select Meal</option>
+                        <option value="Coleslaw Sandwich">Coleslaw Sandwich</option>
+                        <option value="Grilled Sandwich">Grilled Sandwich</option>
+
+                    </select>
+                    <h6 class="vali" id="vege_break_h">This field is required</h6>
+
+                </div>
+                <div class="col-sm-3">
+                    <div id="input_div">
+                        <input type="button" value="-" id="minus_vege" onclick="minus()">
+                        <input type="text" size="50" value="1" id="count" class="count">
+                        <input type="button" value="+" id="plus_vege" onclick="plus()">
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- one---- -->
+
+
+            <div class="row vege_grilled" id="vege_grilled">
+                <div class="col-sm-9">
+                    <select class="form-control form-control-lg" id="vege_break_select_one" onclick="myvege_one()">
+                        <option value="none">Select Meal</option>
+                        <option value="Grilled Sandwich">Grilled Sandwich</option>
+
+                    </select>
+                    <h6 class="vali" id="vege_break_one_h">This field is required</h6>
+
+                </div>
+                <div class="col-sm-3">
+                    <div id="input_div">
+                        <input type="button" value="-" id="minus_vege_one" onclick="minus_one()">
+                        <input type="text" size="50" value="1" id="count_one" class="count">
+                        <input type="button" value="+" id="plus_vege_one" onclick="plus_one()">
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+              <!-- two---- -->
+
+
+              <div class="row vege_col" id="vege_col">
+                <div class="col-sm-9">
+                    <select class="form-control form-control-lg" id="vege_break_select_two" onclick="myvege_two()">
+                        <option value="none">Select Meal</option>
+                        <option value="Coleslaw Sandwich">Coleslaw Sandwich</option>
+
+
+                    </select>
+                    <h6 class="vali" id="vege_break_two_h">This field is required</h6>
+
+                </div>
+                <div class="col-sm-3">
+                    <div id="input_div">
+                        <input type="button" value="-" id="minus_vege_two" onclick="minus_two()">
+                        <input type="text" size="50" value="1" id="count_two" class="count">
+                        <input type="button" value="+" id="plus_vege_two" onclick="plus_two()">
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+            <br>
+            <br>
+            <button class="btn btn-primary add_btn" id="add_btn" onclick="addbtnvege()"> Add more Dish</button>
+
+            <br>
+            <br>
+            <br>
+            <button class="btn btn-primary " onclick="backvege_break()"> Back</button>
+            <button class="btn btn-primary " onclick="validatevege_break()"> Submit</button>
+
+        </div>
+
+
+
+
+        </fieldset>
+    </div>
+    
+
+
+
+
+    <script src="plus.js"></script>
+    <script src="break.js"></script>
+</body>
+</html>

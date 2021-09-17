@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend> Step 3 </legend>
+            <div id="mc_break" class="mc_break">
+
+                <div class="row">
+                    <div class="col-sm-9">
+                        <select class="form-control form-control-lg" id="mc_break_select" onclick="mc_break_select()">
+                            <option value="none">Select Meal</option>
+                            <option value="Egg Miffine">Egg Miffine</option>
+                        </select>
+                        <h6 class="one1" id="mc_break_h">This field is required</h6>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="input_div">
+                            <input type="button" value="-" id="minus_mc" onclick="minus()">
+                            <input type="text" size="50" value="1" id="count" class="count count_mc_break">
+                            <input type="button" value="+" id="plus_mc" onclick="plus()">
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+                <br>
+                <button class="btn btn-primary " onclick="backmc_break()"> Back</button>
+                <button class="btn btn-primary " onclick="validatemc_break()"> Submit</button>
+            </div>
+
+
+
+
+        </fieldset>
+    </div>
+
+
+
+    <script src="plus.js"></script>
+    <script src="break.js"></script>
+
+
+</body>
+
+</html>
