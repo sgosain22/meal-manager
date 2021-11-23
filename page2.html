@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css" />
+</head>
+<body>
+     <div id="wrapper">
+         <!-- step two start-->
+
+     <div class="phase_two">
+        <div class="navbar">
+            <div class="step1"><a href="index.html">Step1</a></div>
+            <div class="step2 current"><a href="page2.html">Step2</a></div>
+            <div class="step3"><a href="page3.html">Step3</a></div>
+            <div class="review"><a href="page4.html">Review</a></div>
+          </div>
+        <div  class="restaurant_selection">
+          <p>Please select a Restaurant</p>
+          <select id="res_list" class="form-select"  aria-label="Default select example">
+            <option selected >---</option>
+          </select>
+        </div>
+        <div class="phase_two_previous_btn">
+          <button type="button" class="btn btn-primary">
+              <a href="index.html">Previous</a>
+          </button>
+        </div>
+        <div  class="phase_two_next_btn">
+          <!-- onclick="storeListTwo()" -->
+          <button type="button" id="btnTwo" class="btn btn-primary" >
+              <a href="page3.html">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- step two end-->
+     </div>
+     <script src="page2.js"></script>
+</body>
+</html>

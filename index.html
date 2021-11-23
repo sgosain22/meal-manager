@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+
+      <!-- step one start-->
+
+      <div class="phase_one">
+        <div id="wrapper">
+          <div class="navbar">
+            <div class="step1 current"><a href="index.html">Step1</a></div>
+            <div class="step2"><a href="page2.html">Step2</a></div>
+            <div class="step3"><a href="page3.html">Step3</a></div>
+            <div class="review"><a href="page4.html">Review</a></div>
+          </div>
+        <div class="meal_selection">
+          <p>Please select a Meal</p>
+          <!-- onchange="getThreeMeal()" -->
+          <select id="three_meal" class="form-select"  aria-label="Default select example">
+            <option selected>---</option>
+            <option value="breakfast" >Breakfast</option>
+            <option value="lunch" >Lunch</option>
+            <option value="dinner" >Dinner</option>
+          </select>
+        </div>
+        <div class="guest_number">
+          <p>Please Enter number of people</p>
+          <!-- onchange="getGuestQuantity()" -->
+          <select id="guest_quantity" class="form-select"  aria-label="Default select example">
+            <option selected>---</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="next_btn">
+          <!-- onclick="storeData()" -->
+        <button type="button" id="btnOne" class="btn btn-primary" >
+            <a onclick="validate()" href="page2.html">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- step one end-->
+
+     
+
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

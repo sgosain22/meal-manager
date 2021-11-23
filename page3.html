@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step3</title>
+    <link rel="stylesheet" href="color.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- step three start-->
+
+      <div class="phase_three">
+        <div class="navbar">
+          <div class="step1"><a href="index.html">Step1</a></div>
+          <div class="step2"><a href="page2.html">Step2</a></div>
+          <div class="step3 current"><a href="page3.html">Step3</a></div>
+          <div class="review"><a href="page4.html">Review</a></div>
+        </div>
+        <div id="select_complete_dish">
+          <div class="row"></div>
+
+          <div id="extra_selection" class="select_dish col-sm-7">
+            <p>Please select a Dish</p>
+            <select
+              id="formSelectDish"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option selected>---</option>
+            </select>
+          </div>
+          <div id="extra" class="serving_number col-sm-5">
+            <p>Please Enter no. of servings</p>
+            <input id="serving_no" type="number" name="serving" />
+          </div>
+        </div>
+        <div class="more_item">
+          <button id="add">Add</button>
+        </div>
+        <div class="phase_three_previous_btn">
+          <button type="button" class="btn btn-primary">
+            <a href="page2.html">Previous</a>
+          </button>
+        </div>
+        <div class="phase_three_next_btn">
+          <button
+            type="button"
+            id="btnThree"
+            class="btn btn-primary"
+            onclick=""
+          >
+            <a href="page4.html">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- step three end-->
+    </div>
+    <script src="page3.js"></script>
+  </body>
+</html>
